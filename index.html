@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>     
+    <head> 
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="style.css"> 
+        <title>MEGAMIND CALCULATOR</title> 
+        <link rel="icon" type="image/png" href="Untitled.png"> 
+    </head>
+     <body> 
+        <h1 class="title">MEGAMIND</h1> 
+        <div class="operations" id="operations">
+            <div class="operator2">
+         <img onclick="saveoperation('plus');" src="https://www.pngkey.com/png/full/19-193347_red-plus-png.png"  class="operator" id="plus">
+         <img onclick="saveoperation('minus');" src="https://pngimg.com/d/minus_PNG64.png" class="operator" id="minus">
+         </div>
+         <div class="operator22">
+         <img onclick="saveoperation('times');" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Orange_x.svg/600px-Orange_x.svg.png" class="operator" id="times">
+         <img onclick="saveoperation('divide');" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Emblem-divide.svg/1024px-Emblem-divide.svg.png" class="operator" id="divide">
+         </div>
+         <button onclick="loadpage();" hidden="true" class="loadpage-button" id="go">Lets GoOoO!</button>
+
+        </div>
+        <div class="calculator" hidden="true" id="game">
+            <span class="calculate">calculator</span>
+            <div class="scores">           
+            <span class="score">score</span>
+            <span class="score-num" id="score-num">0</span>
+            </div>
+            <span class="num" id="num1">5</span>
+            <img src="https://www.pngkey.com/png/full/19-193347_red-plus-png.png" class="operator2" id="operator">
+            <span class="num" id="num2">=</span>
+            <span class="equal">=</span>
+            <input type="number" class="answer-box" id="answerbox">
+            <button onclick="checkanswer();" class="calculation" id="calculation">Calculation</button>
+            <button onclick="changeoperation();" class="change-operation" id="change-operation">Change Operator</button>
+            <button onclick="playagain();" class="play-again" id="play-again">Play Again</button>
+        </div>
+        <script src="script.js"></script>
+    </body> 
+    </html>
